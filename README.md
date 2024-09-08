@@ -36,7 +36,9 @@ Ce projet démontre l'intégration efficace de Power BI et de Python pour l'anal
 
 Des photos des graphiques réalisés sont disponibles dans ce répertoire pour illustrer les visualisations.
 ![Graphique 1](Images/graphe1.png)
+
 ![Graphique 2](Images/graphe2.png)
+
 ![Graphique 3](Images/graphe3.png)
 
 **Auteur** : Mouhssine Bairoune
