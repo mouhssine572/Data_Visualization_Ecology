@@ -1,3 +1,5 @@
+# Rapport Power BI
+
 ## Introduction
 
 Depuis des décennies, la question du réchauffement climatique a occupé le devant de la scène dans les débats scientifiques, politiques et sociétaux.
@@ -32,5 +34,6 @@ Le projet se compose de deux parties principales :
 
 Ce projet démontre l'intégration efficace de Power BI et de Python pour l'analyse des données climatiques. Power BI permet de créer des visualisations interactives et des rapports détaillés, tandis que le script Python facilite la préparation et la transformation des données nécessaires pour une analyse approfondie.
 
-**Auteurs** : Mouhssine Bairoune
+Des photos des graphiques réalisés sont disponibles dans ce répertoire pour illustrer les visualisations.
 
+**Auteur** : Mouhssine Bairoune
