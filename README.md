@@ -49,3 +49,14 @@ data['Annulé_Pourcentage'] = (data['Documents_Annulés'] / data['Documents_Tota
 
 # Exportation des données transformées
 data.to_csv('data_transformed.csv', index=False)
+
+## Utilisation
+Préparation des Données : Exécutez le script Python pour transformer les données brutes.
+Importation dans Power BI : Importez les fichiers de données transformées dans Power BI.
+Création des Visualisations : Utilisez les outils de Power BI pour créer des graphiques et des tableaux de bord.
+Analyse et Rapport : Analysez les visualisations et préparez le rapport final.
+
+## Conclusion
+Ce projet démontre l'intégration efficace de Power BI et de Python pour l'analyse des données climatiques. Power BI permet de créer des visualisations interactives et des rapports détaillés, tandis que le script Python facilite la préparation et la transformation des données nécessaires pour une analyse approfondie.
+
+
