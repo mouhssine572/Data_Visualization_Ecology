@@ -1,62 +1,36 @@
-# Data_Visualization_eco
-Visualization for ecological data
-https://disguisehub-1.my.canva.site/sae-groupe7
-# Rapport Power BI et Script Python - Groupe 7
-
-**Membres du Groupe :**
-- Evan Lamour
-- Maxime Planques
-- Duc Hui
-- Mouhssine Bairoune
-
 ## Introduction
 
-Ce projet combine l'utilisation de Power BI et d'un script Python pour analyser les données relatives au réchauffement climatique. L'objectif est de fournir une analyse approfondie en visualisant des données complexes et en appliquant des transformations de données pour obtenir des informations significatives.
+Depuis des décennies, la question du réchauffement climatique a occupé le devant de la scène dans les débats scientifiques, politiques et sociétaux.
 
-## Power BI
+Ce phénomène, amplifié par les activités humaines, constitue l'un des défis les plus pressants et complexes auxquels l'humanité est confrontée au 21ᵉ siècle. Alors que les preuves scientifiques continuent de s'accumuler, il devient impératif de reconnaître et de comprendre les impacts du réchauffement climatique sur notre planète.
 
-Power BI est une suite d'outils d'analyse de données développée par Microsoft. Il permet de créer des rapports interactifs et des tableaux de bord à partir de diverses sources de données. Pour ce projet, nous avons utilisé Power BI pour :
+Ce rapport de projet vise à présenter une analyse approfondie de l'existence et des manifestations du réchauffement climatique, en mettant en lumière les données scientifiques disponibles, les tendances observées et les conséquences prévisibles. En examinant les multiples facettes de ce phénomène, nous chercherons à fournir une perspective éclairée sur l'urgence d'agir pour atténuer les effets néfastes du changement climatique.
 
-- **Créer des visualisations interactives** : Graphiques, cartes et indicateurs montrant l'évolution du rejet de CO2, des températures, des catastrophes naturelles, et d'autres aspects liés au changement climatique.
-- **Analyser les tendances** : Examiner les données sur une période prolongée pour identifier les tendances et les anomalies.
-- **Comparer les données** : Analyser les émissions de CO2 par pays et continent, et comparer les données démographiques avec les niveaux de pollution.
+## Données et Méthodologie
 
-## Script Python
+Le projet se compose de deux parties principales :
 
-Le script Python fourni est utilisé pour préparer et transformer les données avant leur importation dans Power BI. Voici un aperçu des principales fonctionnalités du script :
+1. **Script Python** : Un script Python est utilisé pour préparer et transformer les données brutes avant de les importer dans Power BI. Le script effectue les tâches suivantes :
+   - Connexion à Google Cloud Storage pour récupérer les fichiers de données.
+   - Transformation des données en DataFrame à l'aide de pandas.
+   - Sauvegarde des données transformées sous format CSV pour une utilisation ultérieure dans Power BI.
 
-- **Collecte des Données** : Le script récupère les données brutes à partir de diverses sources, telles que des fichiers CSV ou des API.
-- **Préparation des Données** : Transformation des données en utilisant des bibliothèques comme `pandas` pour nettoyer et structurer les données. Cela inclut la gestion des types de données, le traitement des valeurs manquantes, et la normalisation des données.
-- **Calcul des Métriques** : Le script calcule des métriques clés telles que les pourcentages de documents annulés, les moyennes de température, et d'autres indicateurs pertinents.
-- **Exportation des Données** : Les données transformées sont exportées sous un format compatible avec Power BI, comme des fichiers CSV ou des bases de données.
-
-### Exemple de Script Python
-
-Voici un exemple simplifié de script Python utilisé pour transformer les données :
-
-```python
-import pandas as pd
-
-# Chargement des données
-data = pd.read_csv('data.csv')
-
-# Nettoyage des données
-data.dropna(inplace=True)
-data['Date'] = pd.to_datetime(data['Date'])
-
-# Calcul des pourcentages
-data['Annulé_Pourcentage'] = (data['Documents_Annulés'] / data['Documents_Total']) * 100
-
-# Exportation des données transformées
-data.to_csv('data_transformed.csv', index=False)
+2. **Rapport Power BI** : Le rapport est conçu pour analyser les données climatiques à travers diverses visualisations. Il est constitué des sections suivantes :
+   - **Évolution du rejet de CO2** : Analyse de la consommation de CO2 dans le monde, par pays et continent, depuis 1750.
+   - **Évolution de la température** : Visualisation des changements de température globale et océanique, ainsi que de l’étendue de la banquise et du niveau marin.
+   - **Évolution des catastrophes naturelles** : Analyse du nombre de catastrophes naturelles depuis 1900.
+   - **Corrélation entre le rejet de CO2 et le développement démographique** : Étude des relations entre les émissions de CO2 et la croissance démographique, avec une attention particulière sur des pays spécifiques comme la Chine.
 
 ## Utilisation
-Préparation des Données : Exécutez le script Python pour transformer les données brutes.
-Importation dans Power BI : Importez les fichiers de données transformées dans Power BI.
-Création des Visualisations : Utilisez les outils de Power BI pour créer des graphiques et des tableaux de bord.
-Analyse et Rapport : Analysez les visualisations et préparez le rapport final.
+
+1. **Préparation des Données** : Exécutez le script Python pour transformer les données brutes.
+2. **Importation dans Power BI** : Importez les fichiers de données transformées dans Power BI.
+3. **Création des Visualisations** : Utilisez les outils de Power BI pour créer des graphiques et des tableaux de bord.
+4. **Analyse et Rapport** : Analysez les visualisations et préparez le rapport final.
 
 ## Conclusion
+
 Ce projet démontre l'intégration efficace de Power BI et de Python pour l'analyse des données climatiques. Power BI permet de créer des visualisations interactives et des rapports détaillés, tandis que le script Python facilite la préparation et la transformation des données nécessaires pour une analyse approfondie.
 
+**Auteurs** : Mouhssine Bairoune
 
